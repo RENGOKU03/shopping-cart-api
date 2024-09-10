@@ -92,6 +92,7 @@ html {
   border: #8b0000 0.1rem solid;
   border-radius: 4%;
   max-width: fit-content;
+  white-space: nowrap;
 }
 .home-container {
   display: grid;
@@ -174,6 +175,18 @@ html {
 .div-detail button:hover {
   background-color: #000;
 }
+.div-empty-cart {
+  display: flex;
+  justify-content: center;
+  min-height: 30vh;
+  align-items: center;
+}
+.div-empty-cart span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #8b0000;
+  text-align: center;
+}
 @media (min-width: 600px) {
   .nav-bar {
     flex-direction: row;
@@ -211,6 +224,9 @@ html {
   .div-item {
     order: 1;
   }
+  .div-empty-cart span {
+    font-size: 4rem;
+  }
 }
 @media (min-width: 700px) {
   .div-item {
@@ -218,13 +234,16 @@ html {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+  .div-empty-cart span {
+    font-size: 5rem;
+  }
 }
 @media (min-width: 1000px) {
   .nav-bar {
     justify-content: space-around;
   }
   .nav-bar span {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .home-container {
     grid-template-columns: repeat(3, 1fr);
@@ -238,10 +257,13 @@ html {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
   }
+  .div-empty-cart span {
+    font-size: 8rem;
+  }
 }
 @media (min-width: 1300px) {
   .nav-bar span {
-    font-size: 4rem;
+    font-size: 6rem;
   }
   .home-container {
     grid-template-columns: repeat(4, 1fr);

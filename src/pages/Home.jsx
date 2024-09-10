@@ -24,6 +24,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
+      {loading ? "Loading" : null}
       {products && products.length > 0
         ? products.map((product, index) => (
             <Card key={index} product={product} />
