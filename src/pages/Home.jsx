@@ -10,7 +10,6 @@ const Home = () => {
     try {
       const response = await fetch("https://fakestoreapi.com/products");
       const data = await response.json();
-
       setProducts(data);
     } catch (e) {
       console.log(e);
@@ -18,18 +17,24 @@ const Home = () => {
       setLoading(false);
     }
   }
+
   useEffect(() => {
     fetchProducts();
   }, []);
 
   return (
-    <div className="home-container">
-      {loading ? "Loading" : null}
-      {products && products.length > 0
-        ? products.map((product, index) => (
-            <Card key={index} product={product} />
-          ))
-        : "Loading"}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
+      {loading ? (
+        <div className="text-2xl font-semibold text-center col-span-full">
+          Loading...
+        </div>
+      ) : products && products.length > 0 ? (
+        products.map((product, index) => <Card key={index} product={product} />)
+      ) : (
+        <div className="text-2xl font-semibold text-center col-span-full">
+          No products found.
+        </div>
+      )}
     </div>
   );
 };

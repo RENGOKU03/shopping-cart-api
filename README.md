@@ -1,8 +1,29 @@
-# React + Vite
+# 🛍️ React Redux Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, animated shopping cart application built using **React**, **Redux Toolkit**, **Tailwind CSS**, and **Framer Motion**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+- 📦 Fetches products dynamically from the FakeStore API
+- 🛒 Add/remove items from the cart with state managed using Redux
+- 🔢 Displays cart item count in navbar
+- ⚡ Page transitions using Framer Motion
+- 💅 Responsive and animated UI using Tailwind CSS
+- 🧩 Component-based architecture for scalability
+
+---
+
+## 🛠️ Tech Stack
+
+| Tech              | Why It’s Used                                 |
+| ----------------- | --------------------------------------------- |
+| **React**         | Core frontend framework for building UI       |
+| **Redux Toolkit** | Simplified global state management            |
+| **React Router**  | Handles routing between pages                 |
+| **Tailwind CSS**  | Utility-first CSS for fast, responsive design |
+| **Framer Motion** | Smooth animations and transitions             |
+| **FakeStore API** | Sample product data for testing               |
+
+---
